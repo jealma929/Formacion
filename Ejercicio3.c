@@ -8,7 +8,7 @@ int main(void)
     scanf("%d%d",&n1,&n2,&n3,&n4);
     sum=n1+n2;
     prod=n3*n4;
-    printf("la suma de ", n1, " + ", n2, " es ", sum);
-    printf("el producto de ", n3, " + ", n4, " es ", prod);
+    printf("la suma de todos los numeros es ", sum);
+    printf("el promedio de los numeros es ", prom);
     return 0;
 }
