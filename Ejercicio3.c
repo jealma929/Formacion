@@ -4,11 +4,11 @@ int main(void)
 {
     int n1, n2, n3, n4, sum, prod;
     /* code */
-    printf("Introduce cuatro numeros separados por espacios");
-    scanf("%d%d",&n1,&n2,&n3,&n4);
+    printf("Introduce cuatro numeros\n");
+    scanf("\n%d\n%d\n%d\n%d",&n1,&n2,&n3,&n4);
     sum=n1+n2;
     prod=n3*n4;
-    printf("la suma de todos los numeros es ", sum);
-    printf("el promedio de los numeros es ", prod);
+    printf("\nla suma de todos los numeros es %d", sum);
+    printf("\nel promedio de los numeros es %d", prod);
     return 0;
 }
