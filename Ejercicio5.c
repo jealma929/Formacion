@@ -5,11 +5,11 @@ int main(void)
     float prec, prod;
     int cant;
     /* code */
-    printf("Introduce el precio");
-    scanf("%d%d",&prec);
-    printf("Introduce la cantidad");
-    scanf("%d%d",&cant);
-    prod=(float)prec*cant
-    printf("el importe total es )", n1, " * ", n2, ") = ", prod);
+    printf("Introduce el precio ");
+    scanf("%f",&prec);
+    printf("\nIntroduce la cantidad ");
+    scanf("%d",&cant);
+    prod=prec*cant;
+    printf("\nel importe total de %d unidades a %f es %f)", cant, prec, prod);
     return 0;
 }
