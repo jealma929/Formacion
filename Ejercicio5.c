@@ -10,6 +10,6 @@ int main(void)
     printf("\nIntroduce la cantidad ");
     scanf("%d",&cant);
     prod=prec*cant;
-    printf("\nel importe total de %d unidades a %f es %f)", cant, prec, prod);
+    printf("\nel importe total de %d unidades a %f es %f", cant, prec, prod);
     return 0;
 }
