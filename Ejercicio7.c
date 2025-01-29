@@ -16,12 +16,12 @@ int main(void)
     plimon=limon*0.19;
     /* imprimimos el informe*/
     printf("\n \n");
-    printf(" Producto     Ventas     Precio          Total\n");
-    /*       1234567890123456789012345678901234567890123456789*/
-    printf(" ---------------------------------------------\n");
-    printf(" Cola12345678%7d       0.17          %7.2f\n",cola, pcola);
-    printf(" Naranja12345%7d       0.20          %7.2f\n",naranja,pnaranja);
-    printf(" Limon1234567%7d       0.19          %7.2f\n",limon,plimon);
-    printf("                                TOTAL         %7.2f\n",plimon+pnaranja+pcola);
+    printf("Producto      Ventas     Precio         Total\n");
+    /*      1234567890123456789012345678901234567890123456789*/
+    printf("---------------------------------------------\n");
+    printf("Cola       %9.7s     0.17          %7.2f\n",cola, pcola);
+    printf("Naranja12345%7d       0.20          %7.2f\n",naranja,pnaranja);
+    printf("Limon1234567%7d       0.19          %7.2f\n",limon,plimon);
+    printf("                               TOTAL         %7.2f\n",plimon+pnaranja+pcola);
     return 0;
 }

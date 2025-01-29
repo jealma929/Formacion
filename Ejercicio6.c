@@ -1,27 +1,19 @@
 #include <stdio.h>
+#include <math.h>
 
 int main(void)
 {
-   float num,resto,n50,n20,n10,n05;
-
+   int n50,n20,n10,n05;
+   float num;
    printf("\n Intruduce el importe a devolver \n");
    scanf("%f",&num);
    num=num*100;
-   printf ("\n%d\n",num);
-   n50=num/50;
-   resto=num-(50*n50);
-   printf("monedas 50 %d %d\n",n50,resto);
-
-   n20=resto/20;
-   printf("%d",resto);
-   resto=n20-(20*n20);
-   printf("monedas 20 %d %d\n",n20 ,resto);
-   n10=resto/10;
-   resto=n10-(10*n10);
-   printf("monedas 10 %d %d\n",n10 ,resto);
-   printf("%d", resto);
-   n05=resto/0.05;
-   
+   /*comparamos grupos*/
+   n50=fabs(num/50);
+   n20=fabs((num-(n50*50))/20);
+   n10=fabs((n20-(n20*20))/10);
+   n05=fabs((n10-(n10*10))/5);
+   /*imprimimos*/   
    printf("\n%d monedas de 50\n",n50);
    printf("%d monedas de 20\n",n20);
    printf("%d monedas de 10\n",n10);
