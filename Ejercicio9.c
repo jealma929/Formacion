@@ -7,17 +7,17 @@ int main(void)
     /* code */
 
     printf("\nIntroduce \e[1m a \e[m de la 2a. ecuacion ax+by=c ");
-    scanf("%d\n",&a1);
+    scanf("%d",&a);
     printf("\nIntroduce \e[1m b \e[m de la 1a. ecuacion ax+by=c ");
-    scanf("%d\n",&b);
+    scanf("%d",&b);
     printf("\nIntroduce \e[1m c \e[m de la 1a. ecuacion ax+by=c ");
-    scanf("%d\n",&c);
+    scanf("%d",&c);
     printf("\nIntroduce \e[1m a \e[m de la 2a. ecuacion ax+by=c ");
-    scanf("%d\n",&a1);
+    scanf("%d",&a1);
     printf("\nIntroduce \e[1m b \e[m de la 2a. ecuacion ax+by=c ");
-    scanf("%d\n",&b1);
+    scanf("%d",&b1);
     printf("\nIntroduce \e[1m c \e[m de la 2a. ecuacion ax+by=c ");
-    scanf("%d\n",&c1);
+    scanf("%d",&c1);
 
     y=(float) (((a1*c)-(a*c1))/((a1*b)-(a*b1)));
     x=(float) (c-(b*y))/a;
