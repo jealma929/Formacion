@@ -2,12 +2,12 @@
 
 int main(void)
 {
-    int cant, desc,codigo;
+    int cant,desc,codigo;
     float precio,total,descuento, iva, final;
-    char texto1, texto2;
+   
     /* code */
-    texto1="16% IVA";
-    texto2="TOTAL"
+   
+   
 
     printf("\nIntroduce \e[1m Codigo del producto \e[m ");
     scanf("%d",&codigo);
@@ -24,21 +24,12 @@ int main(void)
 
          //   123456789 123456789 123456789 1234567890
     printf("\n        \e[1m----RAZA----\e[m        ");
-    
-    printf("\n%-14d %14.2f", codigo, precio);Printf(" €");
-    printf("\n%-14d %14.2f", cant, total);Printf(" €");
-    printf("\n%-14d %% %14.2f", desc,descuento);Printf(" €");
-    printf("\n%-14c %14.2f, texto1, iva");Printf(" €");
-    printf("\n%-14c %14.2f, texto2, final");Printf(" €");
-    printf("\n%-14d %14.2d, codigo, precio");Printf(" €")
-    
-
-    
-
-    
-
-    printf("\n La solucione al sistema de ecuaciones es \n");
-    printf("\e[1m x \e[m = %.5f\n",x);
-    printf("\e[1m y \e[m = %.5f",y); 
+    printf("\n");
+    printf("\n%-14d %14.2f", codigo, precio);
+    printf("\n%-14d %14.2f", cant, total);
+    printf("\n%d %% %24.2f", desc,descuento);
+    printf("\n16%% IVA %21.2f", iva);
+    printf("\nTOTAL %23.2f", final);
+    printf("\n\n");
     return 0;
 }
