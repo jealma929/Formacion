@@ -3,11 +3,14 @@
 
 int main(void) 
 {   
- 	int i,sump,contp,sumi,conti;
+ 	int i,sump,contp,sumi,conti;int error;
 	float promp,promi;
-    for (i=1;200;i++)
-	{
-	    if (i%2==0)
+    i=1;contp=0;conti=0;
+    sump=0;sumi=0;
+    promp=0;promi=0;
+    for (i=1;i<=200;i++)
+    {
+        if (i%2==0)
         {
             sump=sump+i;
             contp++;
@@ -18,9 +21,9 @@ int main(void)
                 conti++;
             }    
     }
-    promp=(float)sump/contp;
+    promp=sump/contp;
     promi=(float)sumi/conti;
-	printf("Promedio numeros pares   1-200 -> %f\n", promp);
-	printf("Promedio numeros impares 1-200 -> %f\n", promi);
+	printf("Promedio numeros pares   1-200 -> %.2f\n", promp);
+	printf("Promedio numeros impares 1-200 -> %.2f\n", promi);
 	return 0;
 }
