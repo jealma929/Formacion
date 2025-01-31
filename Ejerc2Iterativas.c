@@ -15,19 +15,20 @@ int main(void)
             if (i=1)
             {
                 num_2=0;
+                printf(" %d ",num_2);
             }
-            for (i=2)
+            if (i=2)
             {
                 num_1=1;
+                printf(" %d ",num_1);
             }
-            printf ("%d ",i);
         }
         else
             {
              num_n=num_2+num_1;
              num_2=num_1;
              num_1=num_n;
-             printf ("%d ",num_n);  
+             printf (" %d ",num_n); 
             }    
     }
     return (0);
