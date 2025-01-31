@@ -18,7 +18,7 @@ int main(void)
     printf("\nIntroduce \e[1m Descuento aplicable \e[m ");
     scanf("%d",&desc);
     total=cant*precio;
-    descuento=total*(desc/100);
+    descuento=total*(float)desc/100;
     iva=(total-descuento)*.016;
     final=total-descuento+iva;
 
