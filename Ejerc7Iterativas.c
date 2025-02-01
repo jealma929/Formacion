@@ -1,5 +1,5 @@
 #include<stdio.h>
-// escribe los multiplos de 3 emtre el 1-50
+// escribe la tabla de multiplicar
 int main(void)
 {
     int i, cant;
