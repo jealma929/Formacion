@@ -2,12 +2,14 @@
 // escribe los multiplos de 3 emtre el 1-50
 int main(void)
 {
-    int i;
+    int i, num;
     i=1;
+     printf("\nLos multiplos de 3 entre 1 y 50 son: \n");
     do
     {
-        printf("\nLos multiplos de 3 entre 1 y 50 son: "\n);
-        printf("%d ",i*3);
-    } while (i<=50);
+    num=i*3;
+    printf("%d ",num);
+    i++;
+    } while (i*3<=50);
     return 0;
 }
