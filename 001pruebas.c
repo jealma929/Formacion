@@ -17,20 +17,10 @@ int main(void)
     
     printf("\npulse seleccion");
     scanf("%d",&num);
-    switch (num)
-    {    case 1:
-        printf("\n1 hola");break;
-    case 2:    
-        printf("\n2 holita");break;
-    case 3:
-        printf("\n3 holota");break;
-    case 4:
-        printf("\n4 holaza");break;
-    case 5:
-        break;    
-    default:
-        printf("Seleccion erronea");
-    }
+    if (num==1){printf("\n1 hola");}    
+    if (num==2){printf("\n2 holita");}
+    
+    
     }
     while (num!=5);
 
