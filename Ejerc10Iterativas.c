@@ -20,20 +20,21 @@ int main(void)
     //Hacemos el menu de seleccion
     printf("\n Convertir el numero %d a Binario pulsa     B \n",num);
     printf("\n Convertir en numero %d a Hexadecimal pulsa H \n",num);
-    printf("\n Para acabar pulsa X");
-    scanf("%c",&opcion);
-    switch (opcion)
-    {
-        case 'B':
-           { base=2;
-            break;}
-        case 'H':
-           { base=16;
-            break;}
-        case 'X':
-            break;
-    }
+    printf("\n Para acabar pulsa X\n");
+    scanf("%c",opcion);
+    
+    if (opcion=='B'||opcion=='b')
+        {
+            base=2;
+        }
+    if (opcion=='H'||opcion=='h')
+        {
+            base=16;
+        }
+    
     //comprobamos la potencia limite de la base
+    printf("%d   %c",base,opcion);
+    getchar();
     while (num>pow(base,i))
     {
         i++;
