@@ -25,11 +25,11 @@ int main(void)
     switch (opcion)
     {
         case 'B':
-            base=2;
-            break;
+           { base=2;
+            break;}
         case 'H':
-            base=16;
-            break;
+           { base=16;
+            break;}
         case 'X':
             break;
     }
@@ -40,7 +40,7 @@ int main(void)
         cont++;
     }
     printf("\n %d  %d %d %d %d \n",i,cont, num, base, pow(base,i));
-    for (i=cont;i=0;i--)
+    for (i=cont;i<0;i--)
     {
         exp=pow(base,i);
         printf("\n %d  %d \n",i,exp);

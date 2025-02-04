@@ -4,6 +4,7 @@ int main(void)
 {
     int u,d,c,m, par1,par2,par3,par4,impar1,impar2,impar3,impar4;
     int sumap,sumai;
+    char error;
     for (u=0;u=9;u++)
     {
         for (d=0;d=9;d++)
@@ -44,8 +45,10 @@ int main(void)
                         {
                             impar4=m;
                         }
-                    sumap=par1+par2+par3+par4;
+                    sumap=par1+par2+par3+par4;                  
                     sumai=impar1+impar2+impar3+impar4;
+
+                    printf("\n %d   %d ",sumap,sumai);
                     if (sumap==sumai)
                     {
                         printf(" %d%d%d%d ", m,c,d,u);
