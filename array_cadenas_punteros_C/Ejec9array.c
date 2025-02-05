@@ -1,8 +1,10 @@
 #include <stdio.h>
 #include <conio.h>
 
-/*void Escribir(int tabla[a][b]);
-    int a,b;
+void escribir(int tabla,int f,int c)
+{
+    int *v,*p,ing;
+    char opcion1;
      do {
         printf("\nDar de alta un Ingreso \e[1m (s/n) \e[m ? ");
         scanf("%c",&opcion1);
@@ -14,13 +16,11 @@
             scanf("%d",p);
             printf("\nIntroducir Ingresos ");
             scanf("%d",ing);
-            tabla[a][b]=ing;
-            //clrscr();
-             }
+            tabla[v][p]=ing;
+            }
         }    
     while (opcion1!='n');
-  
-*/
+}
 //programa vendedores
 int main(void)
 {
@@ -42,7 +42,9 @@ int main(void)
     do{
         scanf("%d",&opcion);
         switch(opcion){
-            case 1: do {
+            case 1: escribir(tabla,18,10);
+                    /*
+                    do {
                         printf("\nDar de alta un Ingreso \e[1m (s/n) \e[m ? ");
                         scanf("%c",&opcion1);
                         if (opcion1='s')
@@ -57,7 +59,7 @@ int main(void)
                             //clrscr();
                             }
                         }    
-                    while (opcion1!='n'); 
+                    while (opcion1!='n'); */
 
             case 2:
             case 3:
