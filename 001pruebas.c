@@ -1,17 +1,58 @@
 #include<stdio.h>
-#include<math.h>
-//prueba switch case
 int main(void)
 {
-    int i,*p ,num, cont, base, exp,bisi=28;
-    char opcion;
-    i=0;cont=0;
-    p=&bisi;
-
-   printf("\n modulo %d", 0%2);
-   while(1){
-                printf("%d",*p);
-            }
-   printf("\n cociente %d", 0/2);
-   printf("\n bisiesto %d",*p); 
+int i=0,r;;
+while (i<3)
+{
+    switch(i)
+    {
+        case 0:
+            r=i;
+            break;
+        case 1:
+            r=i+1;
+            break;
+        case 2:
+            r=i+2;
+        case 3:
+            r=i+3;
+    }
+    i++;
 }
+printf("%i ",r);
+//system ("PAUSE");
+return 0;
+}
+/*
+    if (a>b)
+    {
+        mayor=a;
+    }
+        else
+        {
+            mayor=b;
+        }
+              else 
+            {
+                mayor=0;
+            }
+            a=a+mayor;
+            b=b+mayor;
+}
+printf("%i  %i",a,b);
+}
+*/
+
+/*
+for(i=0;i<2;i++)
+    {
+    for(j=0;j<3;j++)
+    {
+        r=i+j;
+        if(r%2==0)
+            printf("%i ",r);
+    }
+}
+    printf("\n");
+    return 0;
+}*/
