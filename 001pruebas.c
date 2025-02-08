@@ -1,58 +1,39 @@
 #include<stdio.h>
+#include<stdlib.h>
+#include<time.h>
+
+
+void mayornum(int *tabla,int t)
+{
+    int i=1,num=0;
+    num=tabla[0];
+
+    for(i=1;i!=t;i++)
+        {
+            if (num<tabla[i]){num=tabla[i];}
+        }
+    
+    printf("\nEl numero mayor es %d ",num);
+}
+
+
+
 int main(void)
 {
-int i=0,r;;
-while (i<3)
-{
-    switch(i)
-    {
-        case 0:
-            r=i;
-            break;
-        case 1:
-            r=i+1;
-            break;
-        case 2:
-            r=i+2;
-        case 3:
-            r=i+3;
-    }
-    i++;
-}
-printf("%i ",r);
-//system ("PAUSE");
-return 0;
-}
-/*
-    if (a>b)
-    {
-        mayor=a;
-    }
-        else
-        {
-            mayor=b;
-        }
-              else 
-            {
-                mayor=0;
-            }
-            a=a+mayor;
-            b=b+mayor;
-}
-printf("%i  %i",a,b);
-}
-*/
+    srand(time(NULL));
+    int tabla[10];
+    int i,may=0; 
+    int *max;
+    max=tabla;
 
-/*
-for(i=0;i<2;i++)
+    for (i=0;i<10;i++)
     {
-    for(j=0;j<3;j++)
-    {
-        r=i+j;
-        if(r%2==0)
-            printf("%i ",r);
+        tabla[i]=0+rand()%49;
+        printf("%d ",tabla[i]);
     }
-}
-    printf("\n");
+    mayornum(tabla,10);
+    
+   
+
     return 0;
-}*/
+}

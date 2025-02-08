@@ -3,34 +3,42 @@
 #include<time.h>
 
 
-int promedionum(int *ltabla,int ltam,int lnum)
+void mayornum(int numc,int *tabla,int t)
 {
-    int i=1,lnum=0,lcont=0;
-    float lprom=0;
-    for (i=0;i!=ltam;i++ )
-        if (lnum<ltabla[i]){lprom=lprom+ltabla[i];}
-
-    lprom=lprom/lcont;
-    return(lprom);
+    int i,cont=0;
+    float promed=0;
+        for(i=0;i!=t;i++)
+        {
+            if (numc<tabla[i])
+            {           
+                promed=promed+tabla[i];
+                cont=cont+1;
+             }
+        }
+    promed=(float)(promed/cont);        
+    printf("\nEl promedio de los numeros mayores de %d es %.2f ",numc,promed);
 }
+
 
 
 int main(void)
 {
     srand(time(NULL));
     int tabla[10];
-    int i,num=0;
-    float prom;
-   
+    int i;
+    int num,numc=0; 
+    num=10;
+        
     for (i=0;i<10;i++)
     {
-        tabla[i]=0+rand()%19;
+        tabla[i]=0+rand()%49;
         printf("%d ",tabla[i]);
     }
-    printf("\nDame el numero de referencia (0-20)");
-    scanf("%d",num);
-    prom=promedionum (tabla,10,num);
     
-    printf("\nEl promedio de los numeros mayor a %d es %f",num,prom);
-
-    return 0;
+    printf("\nIntroduce el numero de corte ");
+    scanf("%d",&numc);
+   
+    mayornum(numc,tabla,num);
+    
+       return 0;
+}

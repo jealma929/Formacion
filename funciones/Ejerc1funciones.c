@@ -49,7 +49,7 @@ int main(void)
         tabla[i]=0+rand()%19;
         printf("%d ",tabla[i]);
     }
-    may=mayornum (tabla,10);
+    may=mayornum(tabla,10);
 
     mayor(tabla,10,&max);
     
