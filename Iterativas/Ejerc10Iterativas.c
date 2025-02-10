@@ -4,7 +4,7 @@
 int main(void)
 {
     int i, num, cont, base, exp;
-    char opcion;
+    int opcion;
     i=0;cont=0;
     // introducimos un numero
     do
@@ -12,34 +12,36 @@ int main(void)
         printf("Introduce el numero a convertir ");
         scanf("%d",&num);
         if (num<0)
-            {
+            {            
                 printf("/nEl numero introducido es erroneo");
             }
     }
     while (num<0);
     //Hacemos el menu de seleccion
-    printf("\n Convertir el numero %d a Binario pulsa     B \n",num);
-    printf("\n Convertir en numero %d a Hexadecimal pulsa H \n",num);
-    printf("\n Para acabar pulsa X\n");
-    scanf("%c",opcion);
-    
-    if (opcion=='B'||opcion=='b')
+    do
+    {
+    printf("\n Convertir el numero %d a Binario pulsa     1 \n",num);
+    printf("\n Convertir en numero %d a Hexadecimal pulsa 2 \n",num);
+    printf("\n Para acabar pulsa 3");
+    scanf("%d",&opcion);
+        if (opcion==1)
         {
             base=2;
         }
-    if (opcion=='H'||opcion=='h')
+    if (opcion==2)
         {
             base=16;
         }
-    
+    }
+    while (opcion==3);
     //comprobamos la potencia limite de la base
-    printf("%d   %c",base,opcion);
-    getchar();
-    while (num>pow(base,i))
+    do
     {
         i++;
         cont++;
+        printf("\n%d  %d",i,cont);
     }
+    while (num>pow(base,i))
     printf("\n %d  %d %d %d %d \n",i,cont, num, base, pow(base,i));
     for (i=cont;i<0;i--)
     {
