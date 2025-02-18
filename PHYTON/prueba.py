@@ -1,15 +1,7 @@
-m2=('              AGENDA ',
-'---------------------------------------',
-'        >Modrificar Contacto     ',
-'         ',
-'         ',
-'         ',
-'         ',
-'         ',
-'        > Salir              (0) ',
-'                                 ',
-'---------------------------------------')
-for i in range(10):
-  print (m2[i])
+lista=[]
+import random
+for i in range(25):
+  lista.append(random.randint(1,99))
+  print(lista[i]) 
 
 
